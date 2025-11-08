@@ -1,0 +1,105 @@
+/* Fondo verde oscuro y tipografía */
+body {
+    font-family:  'Uchen', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #013220; /* Verde oscuro */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta el contenido al alto de la pantalla */
+}
+/* Botón de regresar al inicio */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(6, 13, 73);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+
+.footer {
+    background-color: #014422; /* Otro tono de verde oscuro */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+    max-width: 900px; /* Ancho máximo para mantenerlo compacto */
+    width: 90%; /* Se adapta al ancho disponible */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsivo */
+}
+
+.text {
+    flex: 1;
+    min-width: 300px; /* Ancho mínimo para textos */
+}
+
+.text h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.text p, .text ul {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text ul li {
+    margin: 5px 0;
+}
+
+.text ul li a {
+    color: #FFFF00; /* Amarillo */
+    text-decoration: none;
+}
+
+.text ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del mapa */
+.map iframe {
+    border: none;
+    width: 400px; /* Tamaño visible del mapa */
+    height: 250px;
+    max-width: 100%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Apila texto y mapa */
+        align-items: center;
+    }
+
+    .text, .map iframe {
+        max-width: 100%;
+    }
+
+    .map iframe {
+        height: 200px; /* Tamaño ajustado para móviles */
+    }
+}

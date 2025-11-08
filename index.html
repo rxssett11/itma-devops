@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecNM | Tecnológico Nacional de México</title>
+    <link rel="shortcut icon" type="image" href="./img/logotec.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ <!-- bootstrap links -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <!-- bootstrap links -->
+ <!-- fonts links -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+ <!-- fonts links -->
+ <!-- icons links -->
+ <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+ <!-- icons links -->
+ <!-- animation links -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <!-- animation links -->
+</head>
+ 
+
+
+<body>
+<!--chat-->
+<div class="chatbot-wrapper">
+  <button id="toggle-chatbot" class="chat-toggle-btn">💬</button>
+  <div class="chatbot-container hidden" id="chatbot-container">
+    <div class="chat-header">
+      <h2>Chatbot</h2>
+      <button id="close-chatbot" class="close-btn">✖</button>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <!-- Mensajes del chatbot aparecerán aquí -->
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+      <button id="send-btn">Enviar</button>
+    </div>
+  </div>
+</div>
+<script src="chat.js"></script>
+
+
+<!--chat-->
+    <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md" id="navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#" id="logo"><img src="./img/tecnm.png" alt="" width="100px">  ITMA </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="./img/menu.png" alt="" width="30px"></span>
+           
+            </button>
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Buscar...">
+              <button class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20px" height="20px">
+                  <path d="M10 2C5.589 2 2 5.589 2 10s3.589 8 8 8c1.611 0 3.105-.483 4.35-1.31l4.29 4.29c.195.195.451.293.707.293s.512-.098.707-.293c.391-.391.391-1.023 0-1.414l-4.29-4.29C17.518 13.105 18 11.611 18 10c0-4.411-3.589-8-8-8zm0 2c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"/>
+                </svg>
+              </button>
+            </div>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                 
+                 <!--  <a class="nav-link" href="#"><img src="./img/home (1).png" alt="" width="40px"></a>-->
+                  </li>
+                  <!-- dropdown -->
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                          Oferta Educativa
+                      </a>
+                      <div class="dropdown-menu">
+                          <a href="IBQ.html" class="dropdown-item">Ingeniería Bioquímica</a>
+                          <a href="IGE.html" class="dropdown-item">Ingeniería En Gestión Empresarial</a>
+                          <a href="IIA.html" class="dropdown-item">Ingeniería En Industrias Alimentarias</a>
+                          <a href="ISC.html" class="dropdown-item">Ingeniería En Sistemas Computacionales</a>
+                      </div>
+                  </li>
+                  <!-- dropdown -->
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                        Nosotros
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="Himno.html" class="dropdown-item">Himno</a>
+                        <a href="directorio.html" class="dropdown-item">Directorio</a>
+                        <a href="organigrama.html" class="dropdown-item">Organigrama</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                      Recursos
+                  </a>
+                  <div class="dropdown-menu">
+                      <a href="https://187.188.200.23/" class="dropdown-item">SII</a>
+                      <a href="https://elibro.net/es/lc/itmilpaalta/login_usuario/?next=/es/lc/itmilpaalta/inicio/" class="dropdown-item">Biblioteca Virtual</a>
+                      <a href="https://revistas.milpaalta.tecnm.mx/index.php/IPSUMTEC" class="dropdown-item">Ipsumtec</a>
+                   <!-- dropdown -->
+                   <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                          Tramites
+                      </a>
+                      <div class="dropdown-menu">
+                          <a href="Mantenimiento.html" class="dropdown-item">Reinscripción</a>
+                          <a href="Mantenimiento.html" class="dropdown-item">Traslado Estudiantil</a>
+                          <a href="Residencias.html" class="dropdown-item">Residencias Profesionales</a>
+                          <a href="Mantenimiento.html" class="dropdown-item">Baja Temporal y Definitiva</a>
+                          <a href="titulacion.html" class="dropdown-item">Titulación Integral</a>
+                          <a href="Mantenimiento.html" class="dropdown-item">Curso de Verano</a>
+                          <a href="Servicio.html" class="dropdown-item">Servicio Social</a>
+                          <a href="Mantenimiento.html" class="dropdown-item">Actividades Extraescolares</a>
+                      
+                      </div>
+                  </li>
+                  <!-- dropdown -->
+                  
+           
+              </div>
+              <div class="icons">
+              
+                <a href="https://www.facebook.com/ITMILPAALTAOFICIAL">
+                  <i class="bx bxl-facebook"></i>
+                 <!-- <img src="./img/logof.png" alt="" width="20px">-->
+              </a>
+                  <a href="https://x.com/TecNM_MX">
+                    <i class="bx bxl-twitter"></i>
+                    <!--<img src="./img/logot.png" alt="" width="40px">-->
+                  </a>
+                 <a href="https://www.youtube.com/user/SNESTMX" >
+                  <i class="bx bxl-youtube"></i> 
+                <!--  <img src="./img/youtube.png" alt="" width="25">-->
+                 </a>
+                 <a href="https://www.youtube.com/user/SNESTMX" >
+                  <i class="bx bxl-whatsapp"></i> 
+                <!--  <img src="./img/youtube.png" alt="" width="25">-->
+                 </a>
+                
+                 </a>
+              </div>
+            </nav>
+          <!-- navbar end -->
+          <!--home section--> 
+          <div class="home">
+            <div class="content" data-aos="zoom-out-right">
+                <h3>Bienvenidos
+                    
+                </h3>
+            <h2>Todos somos <span class="changecontent"></span></h2>
+            
+            <p>
+                  
+                  <br>
+                </p>
+                <p>
+                  
+                    <br>
+                </p>
+                <p>
+                  <br>
+                </p>
+                <p>
+                  <p>
+                  
+                    <br>
+                  </p>
+                  <p>
+                  
+                    <br>
+                  </p>
+                  <p>
+                  
+                    <br>
+                  </p>
+                  
+                  <br>
+                </p>
+                
+              </div>
+              <div class="floating-menu">
+                <div class="menu-item">
+                  <a href="https://login.microsoftonline.com/?whr=tecnm.mx" >
+                    <span class="tooltip">Correo</span>
+                    <img src="./img/letter.png" alt="" width="45">
+                    
+                    </a>
+                </div>
+                <div class="menu-item">
+
+                  <a href="https://www.tecnm.mx/pdf/Calendario_Academico_TecNM_2024_2025.pdf?a=2" >
+                    <span class="tooltip">Calendario</span>
+                   <img src="./img/calender.png" alt="" width="50">
+                  
+                   </a>
+                   
+                </div>
+                <div class="menu-item">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvDpSEwTEJYTcWiNOhT-BJ0t-6PxHt8gUAFZOLIN4SFPZoew/viewform" >
+                    <span class="tooltip">Quejas y/o sugerencias</span>
+                    <img src="./img/feedback.png" alt="" width="45">
+                    
+                    </a>
+                </div>
+                
+              </div>
+            
+   <!--slider-->
+    <div>
+   <title>Slider Automàtico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="slider">
+    <ul>
+        <li>
+            <img src="./img/Captura de pantalla 2024-11-28 142012.png">
+        </li>
+        <li>
+            <img src="./img/Captura de pantalla 2024-11-28 142029.png">
+        </li>
+        <li>
+            <img src="./img/Captura de pantalla 2024-11-28 142052.png">
+        </li>
+       
+    </ul>
+</div>
+  <!-- end slider-->
+   
+        <!-- cards -->
+        <section class="blogs" id="blogs">
+          <p>
+                      
+            <br>
+          </p>
+          <p>
+    
+          <h1>AVISOS <span>ITMA</span></h1>
+      
+  <div class="container" id="cards">
+    <div class="row">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="./img/Captura de pantalla 2024-11-19 021320.png" alt="">
+          <div class="card-img-overlay">
+            
+            
+            <a id="rn" href="Lineasdepago-nov2024.pdf" download="Reporte">  LEER MÁS  </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="./img/Captura de pantalla 2024-11-19 022242.png" alt="">
+          <div class="card-img-overlay">
+            <a id="rn" href="ExamenDeColocaciónNoviembre2024.pdf" download="Reporte">  LEER MÁS  </a>
+            
+          </div>
+      </div>
+      </div> 
+   
+      <div class="container" id="cards">
+        <div class="row">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./img/c1.png" alt="">
+              <div class="card-img-overlay">
+                
+                
+                <a id="rn" href="https://www.facebook.com/share/p/1Wgt4CNC3X/" download="Reporte">  LEER MÁS  </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./img/c2.png" alt="">
+              <div class="card-img-overlay">
+                <a id="rn" href="https://www.facebook.com/share/p/1Jj5SHgfSS/" download="Reporte">  LEER MÁS  </a>
+                
+              </div>
+          </div>
+          </div> 
+          <div class="container" id="cards">
+            <div class="row">
+              <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                  <img src="./img/c4.png" alt="">
+                  <div class="card-img-overlay">
+                    
+                    
+                    <a id="rn" href="https://www.facebook.com/share/p/14jkRAunAv/" download="Reporte">  LEER MÁS  </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                  <img src="./img/c3.png" alt="">
+                  <div class="card-img-overlay">
+                    <a id="rn" href="https://www.facebook.com/share/p/15N95ZVSyM/" download="Reporte">  LEER MÁS  </a>
+                    
+                  </div>
+              </div>
+              </div> 
+      
+  <!-- cards -->
+   
+    <!-- blogs -->
+    <section class="blogs" id="blogs">
+      <p>
+                  
+        <br>
+      </p>
+      <p>
+
+      <h1>COMUNICACIÓN <span>BLOGS</span></h1>
+  
+      <div class="container">
+  
+        <div class="row">
+  
+          <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./img/direc.jpg" alt="">
+            <div class="card-body">
+              <h3>Segundo año de gestión Fátima Yaraset Mendoza Montero.</h3>
+              <h5>ITMA / 1 Diciembre 2024</h5>
+              <p>La comunidad del TecNM Campus Milpa Alta , felicita a la Dra. H.C  Fátima Yaraset Mendoza Montero , por su segundo año de Gestión como
+                Directora del Instituto Tecnológico de Milpa Alta
+                ¡Qué siga cosechando muchos éxitos!
+                #OrgulloTecNM
+                #OrgullosamenteMapaches 
+                #ExcelenciaEnEducaciónTecnológica</p>
+                <button id="blogbtn" onclick="location.href='https://www.facebook.com/share/p/1EDm9g5iQY/';">Read More.</button>
+            </div>
+          </div>  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <video width="349" height="190" autoplay muted loop controls>
+              <source src="VIDEO2.mp4" type="VIDEO/mp4">
+            </video>
+            <div class="card-body">
+              <h3>Carrera mapaches navideños</h3>
+              <h5>ITMA / 08 Diciembre 2024</h5>
+              <p>Con el objetivo de fomentar la identidad institucional, el deporte y la creatividad en nuestro Instituto Tecnológico de Milpa Alta,
+                 se invita a participar en la carrera de mapaches navideños, el día 11 de diciembre del presente año. 
+                 La cita es a las 9:30 horas, en la explanada del centro de San Salvador Cuauhténco. Consulta la convocatoria aquí: </p>
+                 <button id="blogbtn" onclick="location.href='https://l.facebook.com/l.php?u=https%3A%2F%2Fbit.ly%2F49wpBZJ%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR2DSYH2VImigs2IKDueu-cQZl7Hv8Dsw9hTT74QjbneKT8MQ4HZDcfb0MI_aem_LDXhFzZsCxkmu8n2bOrCaw&h=AT3QIYLuWBOG3nJ_jjN6TntviQaeiQ3gIQVWOjTckcxDSP9dgirYyZR7i4087F9PPQhc13zHPrxQWfSk8ifgSdGj_0H2tp8ElZ_mEGb4aaR91pQcmi7H_hQNf4pYEj8669IQ&__tn__=-UK-R&c[0]=AT1OzfAvTmOdZuDf6CMZe6GloT8mRZTgA6thavd__vuzbyZeXpThkcJh7GDDMv_hX2CgGdORjqR-w1DpmmIUy4_f_8JxfGTXJngbZ3VT226gEvPwrRZo0iP2bwojXYmbGpHddFUd-egIljgKDG9Z4cFznWcqgdbt4SsOqT8Ztjl6_J_qw4CLUwVmCJtt7zD4-OE0xk2d7Mn78RP-_B3Lu1fmsyCb9zLtwnvgIbQ';">Read More.</button>
+            
+              
+            </div>
+          </div>  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <video width="349" height="190" autoplay muted loop controls>
+              <source src="VIDEO3.mp4" type="VIDEO/mp4">
+            </video>
+            <div class="card-body">
+              <h3>Evento navideño 2024 ITMA</h3>
+              <h5>ITMA / 6 Diciembre 2024</h5>
+              <p>Con el objetivo de fomentar la identidad institucional y preservar los usos y costumbres, se invita a participar en el Evento Navideño 2024, 
+                el día 11 de diciembre del presente año. Se comparte el programa de actividades aquí:
+                <br>#OrgulloTecNM
+               <br> #tecmilpaaltainforma
+              <br>  #itma_ext</p>
+              <button id="blogbtn" onclick="location.href='https://l.facebook.com/l.php?u=https%3A%2F%2Fbit.ly%2F3ZI1KDh%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR28e2a9kDs9TyZkbTSfQ3kVh7s25Sf4kiP1zZxUo-gSBWjZ1o2yZasH-Sk_aem_z0aWJN0tO7chzkCAKVrkAw&h=AT1OBFmrC87eVnGFDuSQYnhFUfBvobORPoLhDAWge2mAle-9mvH6qoLig5miuHhG3pfXvgro6FPsTABF5EwmF4PfrW5XYd76hfA4AZuoXhzrBFR1mRNzqEOkmI5vv2InkTZl&__tn__=-UK-R&c[0]=AT35d-MLv3jxrQFLWwsWUoYr85gANu2NZLO0lPWVIOtWg9DKl7qKo4AHb8deFXI8c2fzVHwWI5S7GzSWEmZGfRzsTN50gIbHKX0_Wbr8O39kaacPZqjMv9mZeNuF3RBUkwjWQuMcJRdrfJe6HbJ3yxptLinJ3rk5TCp4cdWMA3hBAw1S9mHbcdWsr8xWYDC5VKHaUDag3wE8eeE1qNaKh_HLbg34op1KKdfXFGE';">Read More.</button>
+     
+              
+            </div>
+          </div>  
+          </div>
+          
+        </div>
+  
+      </div>
+  
+  
+     </section>
+     <!-- blogs -->
+      
+     <div class="container">
+  
+      <div class="row">
+
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./img/img1.jpg" alt="">
+          <div class="card-body">
+            <h3>El TecNM campus Milpa Alta en la conservación de los ecosistemas en la región.</h3>
+            <h5>ITMA / 14 Agosto 2024</h5>
+            <p>Como parte del fomento y la concientización en el cuidado del 
+              medio ambiente, estudiantes de nuevo ingreso acudieron a los parajes de "Chipetongo" 
+              zona de reserva ecológica de San Pablo Oztotepec
+             
+              #TransformamosLaEducación</p>
+              <button id="blogbtn" onclick="location.href='https://www.facebook.com/share/p/1B1tk9ANce/';">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <video width="349" height="190" autoplay muted loop controls>
+            <source src="VIDEO.mp4" type="VIDEO/mp4">
+          </video>
+          <div class="card-body">
+            <h3>Excelencia En Educación Tecnológica</h3>
+            <h5>ITMA / 02 Diciembre 2024</h5>
+            <p>En el programa de ampliación de matrícula educativa, el Tecnológico
+               Nacional de México juega un papel fundamental, ya que con sus 254 planteles,
+                tiene capacidad actualmente de albergar a casi 600 mil estudiantes; así lo reconoció 
+                esta mañana la presidenta de México, Claudia Sheinbaum Pardo, durante su conferencia matutina.
+               </p>
+               <button id="blogbtn" onclick="location.href='https://www.facebook.com/share/p/19YQNnHq4e/';">Read More.</button>
+          
+            
+          </div>
+        </div>  
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <iframe width="349" height="190"  src="https://www.youtube.com/embed/1fysHX-IgHo?si=Uz0oLwmSHcuaFhbB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="card-body">
+            <h3>Tecnológico Nacional de México</h3>
+            <h5>ITMA / 6 Diciembre 2024</h5>
+            <p>Es la Institución de Educación Superior Tecnológica más grande de México, atiende a más de 620 mil estudiantes en 254 campus.
+              es una de las instituciones educativas más grandes y prestigiosas de México en el ámbito de la educación tecnológica y superior. Su objetivo principal es formar profesionales altamente capacitados en diversas áreas de la ingenierías.
+            </p>
+            <button id="blogbtn" onclick="location.href='https://youtu.be/1fysHX-IgHo?si=M2FUL33_B_careWf';">Read More.</button>
+   
+            
+          </div>
+        </div>  
+        </div>
+        
+      </div>
+
+    </div>
+
+
+   </section>
+   <!-- blogs -->
+  <!--mapa-
+<div class="mapa">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15072.181445210768!2d-99.09855400000001!3d19.193221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce05a45323f48b%3A0xee08ea99057f16a6!2sInstituto%20Tecnol%C3%B3gico%20de%20Milpa%20Alta!5e0!3m2!1ses!2smx!4v1732005672413!5m2!1ses!2smx"
+ 
+width="400" 
+ height="300"
+ style="border:0;
+ " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div class="side2">
+  <h2>INGENIERIA EN</h2>
+  <h3>GESTIÓN</h3>
+  <h3>EMPRESARIAL</h3>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi sapiente</p>
+</div>
+mapa-->
+<footer class="footer">
+  <div class="container">
+      <div class="text">
+          <h3>Dirección</h3>
+          <p>Independencia Sur No. 36, Colonia San Salvador Cuauhtenco, Alcaldía Milpa Alta, C.P. 12300, CDMX.</p>
+          
+          <h3>Enlaces</h3>
+          <ul>
+              <li><a href="#">Portal de Obligaciones de Transparencia</a></li>
+              <li><a href="#">INAI</a></li>
+              <li><a href="#">Buzón de Sugerencias</a></li>
+          </ul>
+          
+          <h3>Contacto</h3>
+          <p>Conmutador: 55 58 62 37 57</p>
+      </div>
+      <div class="map">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15072.181445210768!2d-99.09855400000001!3d19.193221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce05a45323f48b%3A0xee08ea99057f16a6!2sInstituto%20Tecnol%C3%B3gico%20de%20Milpa%20Alta!5e0!3m2!1ses!2smx!4v1732005672413!5m2!1ses!2smx"
+ 
+             allowfullscreen>
+          </iframe>
+      </div>
+  </div>
+</footer>
+       
+
+      <!-- footer -->
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">ITMA</h1>
+        <p class="text-center">Última actualización 10/diciembre/2024.</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-skype"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong>ITMA</strong> .All Rights Reserved
+        </div>
+        <div class="credite text-center">
+            Designed By <a href="#"><span>SA coding</span></a>
+        </div>
+      </footer>
+      <!-- footer -->
+
+      <a href="#" class="arrow"><i><img src="./img/up-arrow.png" alt="" width="50px"></i></a>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+           
+</body>
+</html>  

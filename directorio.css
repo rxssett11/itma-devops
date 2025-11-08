@@ -1,0 +1,96 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a5735; /* Fondo verde oscuro */
+    color: #fff;
+}
+
+.links{
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.links a{
+  
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 5px;
+    transition: 0.5s ease;
+}
+.links a:hover{
+    background: rgb(6,13,73);;
+    color: #ffffff;
+    border-radius: 5px;
+}
+/* Botón de regresar al inicio */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(6, 13, 73);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+
+
+.table-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Resalta la tabla */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(6, 13, 73);
+    font-size: 60px;
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);*/
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Fondo blanco de la tabla */
+    color: #333; /* Texto oscuro */
+    border: 3px solid #000; /* Contorno negro brillante */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #1077ec; /* Fondo negro */
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Bordes ligeros internos */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo alterno para filas */
+}
+
+tr:hover {
+    background-color: #ffecb3; /* Fondo resaltado al pasar el cursor */
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}

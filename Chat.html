@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Desplegable</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div class="chatbot-wrapper">
+    <button id="toggle-chatbot" class="chat-toggle-btn">💬</button>
+    <div class="chatbot-container hidden" id="chatbot-container">
+      <div class="chat-header">
+        <h2>Chatbot</h2>
+        <button id="close-chatbot" class="close-btn">✖</button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <!-- Mensajes del chatbot aparecerán aquí -->
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+        <button id="send-btn">Enviar</button>
+      </div>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>

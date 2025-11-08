@@ -1,0 +1,82 @@
+/* Fondo y tipografía */
+body {
+    font-family: 'Uchen', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a5735;; /* Fondo verde oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Botón de regresar al inicio */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(6, 13, 73);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+
+/* Título */
+h1 {
+    color:  rgb(6, 13, 73);
+    font-size: 60px;
+   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);*/
+}
+
+/* Organigrama */
+.organigram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Separación entre niveles */
+}
+
+/* Nivel de jerarquía */
+.level {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaciado entre cajas */
+    width: 100%;
+}
+
+/* Cajas del organigrama */
+.box {
+    background-color: #2a5735; /* Verde oscuro para las cajas */
+    color: #fff;
+    border: 2px solid #000; /* Contorno negro mate */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Resalte */
+    text-align: center;
+    min-width: 200px;
+}
+
+.box.main {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #2a5735; /* Verde un poco más claro para destacar */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1); /* Más resalte para la caja principal */
+}
+
+.box:hover {
+    background-color:  rgb(6, 13, 73); /* Resalte al pasar el cursor */
+    color: #fff;
+}
